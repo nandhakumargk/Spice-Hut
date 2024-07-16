@@ -1,0 +1,156 @@
+:root{
+    --yellow:#FFC54D;
+    --red:crimson;
+    --green:#53BF9D;
+    --white:whitesmoke;
+}
+
+*{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.landing{
+    background-image: url(img/pexels-thepaintedsquare-858094.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+
+header a{
+    text-decoration: none;
+    color: #FFC54D;
+}
+
+header{
+    display: flex;
+    padding: 30px;
+}
+
+#logo{
+    flex: 3;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+}
+
+nav a{
+    flex: 1;
+    justify-content: center;
+}
+
+nav a:hover{
+    color: #53BF9D;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.container div{
+    margin-top: .75em;
+}
+
+.para1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.para2{
+    color: var(--yellow);
+}
+
+.container button{
+    width: 20vw;
+    margin-top: 2em;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--green);
+}
+
+.container button:hover{
+    color: var(--green);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background-color: rgb(36, 36, 36);
+    color: var(--white);
+}
+
+#menuheading{
+    padding-top: 1em;
+}
+
+#locationheading,#menuheading{
+    background-color: rgb(36, 36, 36);
+    color: var(--red);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.menu th{
+    color: var(--green);
+    font-size: 1.5rem;
+}
+
+table{
+    width: 100%;
+    padding: 2em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.Main-Course{
+    grid-row: span 2;
+}
+
+.locations{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(36, 36, 36);
+    color: var(--white);
+}
+
+.locations div{
+    flex: 1;
+    padding: 1.5em;
+}
+
+.locations h2{
+    display: flex;
+    justify-content: center;
+    color: var(--green);
+    margin-bottom: 1em;
+}
+
+.locations address{
+    text-align: center;
+}
